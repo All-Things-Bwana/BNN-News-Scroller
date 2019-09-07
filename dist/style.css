@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#scroller {
+  position: fixed;
+  background: var(--bar-color);
+  color: var(--text-color);
+  padding: 10px 0px;
+  font-size: var(--text-size);
+  overflow: hidden;
+  height: var(--bar-height);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#scrollerInner {
+  line-height: var(--bar-height);
+}
+
+#scrollerInner span {
+  margin-right: 25px;
+}

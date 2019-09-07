@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BNN News Scroller</title>
+  
+  <script type="text/javascript">
+    const settings = {
+      rssFeed:          "https://getpocket.com/users/*em15676512207826841/feed/all",
+      updateInterval:   300000,    // miliseconds
+    }
+  </script>
+
+  <style type="text/css">
+    :root {
+      --font-family:      'Arial', sans-serif;
+      --bar-color:        #1866C5;
+      --text-color:       #FFFFFF;
+      --text-size:        22px;
+      --bar-height:       40px;
+    }
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <div id="scroller">
+    <marquee behavior="scroll" direction="left" id="scrollerInner">
+    </marquee>
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
